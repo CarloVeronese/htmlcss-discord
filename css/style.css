@@ -50,7 +50,6 @@ button{
 .row{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
 }
 
 .page-header button{
@@ -144,17 +143,19 @@ button{
 
     /*Main - Section 2*/
 
+.flex-col{
+    display: flex;
+}
+
 .section-middle [class^="col-"]{
     min-height: 380px;
-    flex-grow: 1;
 }
 
-.channels{
-    padding-top: 100px;
-    padding-bottom: 100px;
+.section-middle{
+    padding: 150px 0;
 }
 
-.channels img{
+.section-middle img{
     width: 600px;
     vertical-align: top;
 }
@@ -163,17 +164,14 @@ button{
     justify-content: space-between;
 }
 
-.channels .col-7{
-    flex-grow: 2;
-}
-
 .par-title{
     font-size: 45px;
     font-weight: 900;
     padding-bottom: 20px;
 }
 
-.section-middle p{
+.section-middle p,
+.section-bottom p{
     font-size: large;
     font-weight: 600;
     line-height: 25px;
@@ -186,22 +184,68 @@ button{
 .debug .section-middle .col-7{
     background-color: #1E90FF;
 }
+ 
+    /* Main - Section 3*/
 
 .greybg{
     background-color: #F6F6F6;
 }
+.voice {
+    padding: 150px 0;
+}
+.voice .col-8{
+    justify-content: flex-end;
+}
 
-.main-content .greybg .col-5{
+.main-content .voice .col-4{
     order: -1;
 }
 
-.section-bottom [class^="col-"]{
-    min-height: 690px;
+    /* Main - Section 5*/
+
+.section-bottom{
+    padding: 150px 0;
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact img{
+    width: 1000px;
 }
 
 .debug .section-bottom [class^="col-"]{
+    min-height: 690px;
     background-color: #228B22;
 }
+
+.cta{
+    background-image: url(../img/stars.svg);
+    background-repeat: no-repeat;
+    background-size: 500px;
+    background-position: center;
+}
+
+.cta h3{
+    padding-top: 50px;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.cta-download{
+    padding-top: 40px;
+}
+
+.cta-download button{
+    font-size: larger;
+    color: white;
+    font-weight: 600;
+    padding: 12px 23px;
+    background-color: #8EA1E1;
+}
+
+/* Footer*/
 
 footer{
     background-color: #23272A;
