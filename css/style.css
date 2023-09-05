@@ -144,12 +144,39 @@ button{
 
     /*Main - Section 2*/
 
-.greybg{
-    background-color: #D3D3D3;
-}
-
 .section-middle [class^="col-"]{
     min-height: 380px;
+    flex-grow: 1;
+}
+
+.channels{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.channels img{
+    width: 600px;
+    vertical-align: top;
+}
+
+.channels .row{
+    justify-content: space-between;
+}
+
+.channels .col-7{
+    flex-grow: 2;
+}
+
+.par-title{
+    font-size: 45px;
+    font-weight: 900;
+    padding-bottom: 20px;
+}
+
+.section-middle p{
+    font-size: large;
+    font-weight: 600;
+    line-height: 25px;
 }
 
 .debug .section-middle [class^="col-"]{
@@ -158,6 +185,10 @@ button{
 
 .debug .section-middle .col-7{
     background-color: #1E90FF;
+}
+
+.greybg{
+    background-color: #F6F6F6;
 }
 
 .main-content .greybg .col-5{
