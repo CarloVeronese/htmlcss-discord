@@ -239,10 +239,13 @@ button{
 
 .cta-download button{
     font-size: larger;
-    color: white;
     font-weight: 600;
     padding: 12px 23px;
+}
+
+.purple-bg{
     background-color: #8EA1E1;
+    color: white;
 }
 
 /* Footer*/
@@ -253,7 +256,7 @@ footer{
 
 .section-footer-top {
     padding-top: 50px;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
 }
 
 .footer-title{
@@ -270,6 +273,7 @@ footer{
 .language{
     display: inline-block;
     color: white;
+    padding-bottom: 10px;
 }
 
 .language-symbol{
@@ -277,16 +281,18 @@ footer{
     vertical-align: top;
 }
 
-.debug .section-footer-top{
-    border-bottom: 1px solid white;
+.logos img{
+    width: 38px;
+    padding-right: 20px;
+}
+
+.section-footer-top .container{
+    border-bottom: 1px solid #7289DA;
+    padding-bottom: 20px;
 }
 
 .debug .section-footer-top .row {
     border: 2px dashed black;
-}
-
-.section-footer-top [class^="col-"]{
-    min-height: 440px;
 }
 
 ul{
@@ -328,6 +334,12 @@ ul a{
     justify-content: space-between;
 }
 
+
+.page-footer button{
+    padding: 7px 12px;
+    font-weight: bold;
+}
+
 .debug .page-footer .row{
     background-color: #7FFFD4;
 }
@@ -340,6 +352,8 @@ ul a{
 .debug .page-footer [class^="col"]{
     background-color: #FFB6C1;
 }
+
+/* Columns*/
 
 .col-1{
     flex-basis: calc(100% / 12);
