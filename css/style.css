@@ -11,7 +11,7 @@
 }
 
 .container{
-    max-width: 950px;
+    max-width: 1075px;
     margin: 0 auto;
 }
 
@@ -23,10 +23,8 @@ body{
 
 .page-header{
     background-color: #ADD8E6;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 15px 0px;
+    padding: 20px 0px 15px;
+    background-image: url(../img/jumbo.png);
 }
 
 .row{
@@ -46,7 +44,7 @@ body{
     border: 2px dashed black;
 }
 
-.page-header [class^='col']{
+.debug .page-header [class^='col']{
     padding: 8px;
 }
 
@@ -62,8 +60,14 @@ body{
     text-align: end;
 }
 
-.main-content section {
+.debug .main-content section {
     padding: 40px 0;
+}
+
+.section-one{
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+    padding: 50px 0 140px;
 }
 
 .debug .section-one {
