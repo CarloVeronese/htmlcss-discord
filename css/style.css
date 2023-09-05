@@ -2,8 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Fredoka', sans-serif;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'DM Sans', sans-serif;
 }
 
 .debug [class^="col"]{
@@ -21,23 +20,11 @@ body{
     flex-direction: column;
 }
 
-.page-header{
-    background-color: #ADD8E6;
-    padding: 20px 0px 15px;
-    background-image: url(../img/jumbo.png);
-}
-
-.row{
-    display: flex;
-    flex-wrap: wrap;
-}
-
 button{
     border-radius: 45px;
-}
-
-.page-header button{
-    padding: 7px 12px;
+    background-color: white;
+    border: white;
+    font-weight: bold;
 }
 
 .grow-1{
@@ -50,6 +37,24 @@ button{
 
 .debug [class^="col"]{
     border: 2px dashed black;
+}
+
+/* header */
+
+.page-header{
+    background-color: #ADD8E6;
+    padding: 20px 0px 15px;
+    background-image: url(../img/jumbo.png);
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.page-header button{
+    padding: 7px 12px;
+    font-weight: bold;
 }
 
 .debug .page-header [class^='col']{
@@ -68,9 +73,12 @@ button{
     text-align: end;
 }
 
+/*Main*/
+
 .debug .main-content section {
     padding: 40px 0;
 }
+    /*Main - Section 1*/
 
 .section-one{
     background-image: url(../img/jumbo.png);
@@ -96,9 +104,37 @@ button{
     text-align: center;
 }
 
-/* .section-one .col-9{
+.section-one .col-9{
+    padding-top: 40px;
+}
 
-} */
+.main-title{
+    font-size: 55px;
+    font-weight: bolder;
+    padding-bottom: 30px;
+}
+
+.section-one p{
+    font-size: large;
+    padding: 0 50px 20px;
+    line-height: 30px;
+}
+
+.section-one button{
+    font-size: large;
+    padding: 12px 23px;
+}
+
+.download-mac{
+    padding-right: 20px;
+}
+
+.browser button{
+    background-color: #23272A;
+    color: white;
+}
+
+    /*Main - Section 2*/
 
 .greybg{
     background-color: #D3D3D3;
