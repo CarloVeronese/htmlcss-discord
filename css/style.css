@@ -32,6 +32,14 @@ body{
     flex-wrap: wrap;
 }
 
+button{
+    border-radius: 45px;
+}
+
+.page-header button{
+    padding: 7px 12px;
+}
+
 .grow-1{
     flex-grow: 1;
 }
@@ -84,7 +92,13 @@ body{
 
 .section-one .row {
     justify-content: center;
+    color: white;
+    text-align: center;
 }
+
+/* .section-one .col-9{
+
+} */
 
 .greybg{
     background-color: #D3D3D3;
