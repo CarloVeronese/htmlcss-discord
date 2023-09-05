@@ -50,6 +50,7 @@ button{
 .row{
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .page-header button{
@@ -71,6 +72,13 @@ button{
 
 .page-header .row *:last-child{
     text-align: end;
+}
+
+.page-header a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 0px 15px;
 }
 
 /*Main*/
