@@ -312,7 +312,7 @@ ul a{
     color: white;
 }
 
-.section-footer-top li:first-child a{
+.section-footer-top .list-title{
     color: #7289DA;
 }
 
