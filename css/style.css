@@ -36,6 +36,10 @@ a{
     justify-content: space-between;
 }
 
+img{
+    max-width: 100%;
+}
+
 /* header */
 
 .page-header{
@@ -162,11 +166,6 @@ a{
     padding: 150px 0;
 }
 
-.section-middle img{
-    width: 600px;
-    vertical-align: top;
-}
-
 .channels .row{
     justify-content: space-between;
 }
@@ -210,9 +209,9 @@ a{
     text-align: center;
 }
 
-.contact img{
-    width: 1000px;
-}
+    .contact img{
+        width: 1000px;
+    }
 
 .cta{
     background-image: url(../img/stars.svg);
