@@ -5,10 +5,6 @@
     font-family: 'DM Sans', sans-serif;
 }
 
-.debug [class^="col"]{
-    min-height: 30px;
-}
-
 .container{
     max-width: 1075px;
     margin: 0 auto;
@@ -27,6 +23,10 @@ button{
     font-weight: bold;
 }
 
+a{
+    text-decoration: none;
+}
+
 .grow-1{
     flex-grow: 1;
 }
@@ -35,16 +35,12 @@ button{
     justify-content: space-between;
 }
 
-.debug [class^="col"]{
-    border: 2px dashed black;
-}
-
 /* header */
 
 .page-header{
-    background-color: #ADD8E6;
+    background-color: #3161E0;
     padding: 20px 0px 15px;
-    background-image: url(../img/jumbo.png);
+    /* background-image: url(../img/jumbo.png); */
 }
 
 .row{
@@ -57,13 +53,23 @@ button{
     font-weight: bold;
 }
 
-.debug .page-header [class^='col']{
-    padding: 8px;
+.page-header a{
+    color: black;
 }
 
-.debug .page-header [class^='col']{
-    background-color: #DAA520;
+.nav-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.nav-menu a{
+    /* display: block; */
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    line-height: 32px;
+    padding: 0px 15px;
 }
 .page-header .row *:nth-child(2){
     text-align: center;
@@ -73,36 +79,19 @@ button{
     text-align: end;
 }
 
-.page-header a{
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    padding: 0px 15px;
-}
-
 /*Main*/
 
-.debug .main-content section {
-    padding: 40px 0;
-}
-    /*Main - Section 1*/
+/*Main - Section 1*/
 
 .section-one{
     background-image: url(../img/jumbo.png);
     background-size: cover;
+    background-position: center;
     padding: 50px 0 140px;
-}
-
-.debug .section-one {
-    background-color: #00008B;
 }
 
 .section-one [class^="col"]{
     min-height: 300px;
-}
-
-.debug .section-one [class^="col"]{
-    background-color: #EE82EE;
 }
 
 .section-one .row {
@@ -136,8 +125,15 @@ button{
     padding-right: 20px;
 }
 
+.mac__link{
+    color: black;
+}
+
 .browser button{
     background-color: #23272A;
+}
+
+.browser__link{
     color: white;
 }
 
@@ -177,14 +173,6 @@ button{
     line-height: 25px;
 }
 
-.debug .section-middle [class^="col-"]{
-    background-color: #FFC0CB;
-}
-
-.debug .section-middle .col-7{
-    background-color: #1E90FF;
-}
-
     /* Main - Section 3*/
 
 .greybg{
@@ -213,11 +201,6 @@ button{
 
 .contact img{
     width: 1000px;
-}
-
-.debug .section-bottom [class^="col-"]{
-    min-height: 690px;
-    background-color: #228B22;
 }
 
 .cta{
@@ -291,10 +274,6 @@ footer{
     padding-bottom: 20px;
 }
 
-.debug .section-footer-top .row {
-    border: 2px dashed black;
-}
-
 ul{
     list-style-type: none;
 }
@@ -316,14 +295,6 @@ ul a{
     color: #7289DA;
 }
 
-.debug .section-footer-top [class^="col-"]{
-    background-color: #F08080;
-}
-
-.debug .section-footer-top .col-2{
-    background-color: #20B2AA;
-    border: 2px dashed white;
-}
 
 .page-footer{
     padding: 20px 0 0;
@@ -340,17 +311,9 @@ ul a{
     font-weight: bold;
 }
 
-.debug .page-footer .row{
-    background-color: #7FFFD4;
-}
-
 .page-footer [class^="col"]{
     text-align: center;
     padding: 2px;
-}
-
-.debug .page-footer [class^="col"]{
-    background-color: #FFB6C1;
 }
 
 /* Columns*/
@@ -393,4 +356,69 @@ ul a{
 
 .col-12{
     flex-basis: 100%;
+}
+
+/* DEBUG */
+
+.debug [class^="col"]{
+    border: 2px dashed black;
+}
+
+.debug .page-header [class^='col']{
+    padding: 8px;
+}
+
+.debug .page-header [class^='col']{
+    background-color: #DAA520;
+
+}
+
+.debug .main-content section {
+    padding: 40px 0;
+}
+
+
+.debug [class^="col"]{
+    min-height: 30px;
+}
+
+.debug .section-one [class^="col"]{
+    background-color: #EE82EE;
+}
+
+.debug .section-one {
+    background-color: #00008B;
+}
+.debug .section-middle [class^="col-"]{
+    background-color: #FFC0CB;
+}
+
+.debug .section-middle .col-7{
+    background-color: #1E90FF;
+}
+
+.debug .section-bottom [class^="col-"]{
+    min-height: 690px;
+    background-color: #228B22;
+}
+
+.debug .section-footer-top .row {
+    border: 2px dashed black;
+}
+
+.debug .section-footer-top [class^="col-"]{
+    background-color: #F08080;
+}
+
+.debug .section-footer-top .col-2{
+    background-color: #20B2AA;
+    border: 2px dashed white;
+}
+
+.debug .page-footer .row{
+    background-color: #7FFFD4;
+}
+
+.debug .page-footer [class^="col"]{
+    background-color: #FFB6C1;
 }
