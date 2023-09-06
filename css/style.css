@@ -16,11 +16,12 @@ body{
     flex-direction: column;
 }
 
-button{
-    border-radius: 45px;
+.button{
+    border-radius: 200px;
     background-color: white;
     border: white;
     font-weight: bold;
+    display: inline-block;
 }
 
 a{
@@ -48,9 +49,10 @@ a{
     flex-wrap: wrap;
 }
 
-.page-header button{
-    padding: 7px 12px;
+.page-header .button{
+    padding: 0px 12px;
     font-weight: bold;
+    line-height: 40px;
 }
 
 .page-header a{
@@ -116,9 +118,10 @@ a{
     line-height: 30px;
 }
 
-.section-one button{
+.section-one .button{
     font-size: large;
-    padding: 12px 23px;
+    line-height: 50px;
+    padding: 0px 23px;
 }
 
 .download-mac{
@@ -129,12 +132,16 @@ a{
     color: black;
 }
 
-.browser button{
+.browser .button{
     background-color: #23272A;
 }
 
 .browser__link{
     color: white;
+}
+
+.call-to-action{
+    padding-top: 20px;
 }
 
     /*Main - Section 2*/
@@ -220,10 +227,11 @@ a{
     padding-top: 40px;
 }
 
-.cta-download button{
+.cta-download .button{
     font-size: larger;
+    line-height: 50px;
     font-weight: 600;
-    padding: 12px 23px;
+    padding: 0px 23px;
 }
 
 .purple-bg{
@@ -306,8 +314,9 @@ ul a{
 }
 
 
-.page-footer button{
-    padding: 7px 12px;
+.page-footer .button{
+    line-height: 40px;
+    padding: 0px 12px;
     font-weight: bold;
 }
 
